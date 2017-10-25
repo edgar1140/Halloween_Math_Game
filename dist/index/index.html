@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1> Halloween Math Game</h1>
+    </center>
+    <div id="app"></div>
+    <script src="index.js"></script>
+</body>
+<table width="400" align="center">
+    <tr>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="number1" type="number" value="1" readonly></input>
+            </div>
+        </td>
+        <td>
+            <div>+</div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="number2" type="number" value="2" readonly></input>
+            </div>
+        </td>
+        <td>
+            <div>=</div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="answer" type="number"></input>
+            </div>
+        </td>
+    </tr>
+</table>
+<center>
+    <button id="checkAnswer" class="btn btn-primary" onclick="checkAddition()">Check</button>
+</center>
+
+</html>
