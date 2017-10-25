@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Halloween Math Game</title>
+    <style>
+        body {
+            background: url(../../lib/halloween.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Butcherman', cursive;
+            font-size: 10ex;
+            color: orange;
+            -webkit-text-stroke-color: rgb(113, 0, 141);
+            -webkit-text-stroke-width: 2.8px;
+        }
+
+        .specialtext {
+            font-size: 5ex;
+            color: orange;
+            margin: 5px;
+            padding: 5px;
+            padding-left: 15px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .form-group {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Halloween Math Game</h1>
+    </center>
+    <div id="app"></div>
+    <script src="index.js"></script>
+</body>
+<center>
+    <button id="randNums" class="btn btn-info" onclick="genRandomNums()">Generate New Random Numbers</button>
+    <br>
+</center>
+<table width="500" align="center">
+    <tr>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="number1" type="number" readonly></input>
+            </div>
+        </td>
+        <td>
+            <div class="specialtext">&#215;</div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="number2" type="number" readonly></input>
+            </div>
+        </td>
+        <td>
+            <div class="specialtext">=</div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input class="form-control" id="answer" type="number"></input>
+            </div>
+        </td>
+    </tr>
+</table>
+<center>
+    <button id="checkAnswer" class="btn btn-primary" onclick="checkAddition()">Check</button>
+</center>
+
+<center>
+    <div id="pumpkins"></div>
+</center>
+</body>
+
+</html>
